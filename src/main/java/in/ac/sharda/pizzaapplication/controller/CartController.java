@@ -15,9 +15,7 @@ public class CartController {
 	public List<Cart> items(){
 		List<Cart> items = new ArrayList<>();
 		for(int i = 1; i < 20; i++){
-			items.add(
-					new Cart(i, i*10,"Name "+i,
-							"Desc "+i));
+			items.add(new Cart());
 		}
 		return items;
     }
